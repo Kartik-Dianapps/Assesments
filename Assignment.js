@@ -1,12 +1,20 @@
 // To check whether it is prime or not
-function isPrime(num){
-    if(num === 1)return false;
-    if(num === 2)return true;
-    return num%2!==0;
+function isPrime(num) {
+    if (num <= 1) return false;
+    if (num === 2)return true;
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            return false; 
+        }
+    }
+
+    return true; 
 }
 
-let result = isPrime(6);
-// console.log(result);
+
+
+let result = isPrime(9);
+console.log(result);
 
 // Max and Min element from an array
 function max_min(arr)
