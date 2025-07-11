@@ -15,6 +15,7 @@ header,footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   padding: 12px;
+  place-items: center;
   overflow: hidden;
 }
 
@@ -49,4 +50,10 @@ del {
 
 #wishlist {
   text-align: center;
+}
+
+.btn_remove{
+  background-color: #444;
+  color: white;
+  border-radius: 6px;
 }
